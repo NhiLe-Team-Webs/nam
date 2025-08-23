@@ -226,22 +226,22 @@ const Index = () => {
                 </h3>
                 <div className="space-y-4">
                   <Button variant="social" className="w-full bg-blue-600 hover:bg-blue-500 text-white" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScCdQhfI1pOT9gUQBTN0hxs0kN15TuZ1U4WEzq-L2aQdukDaQ/viewform" target="_blank" rel="noopener noreferrer">
                       Điền Form Đăng Ký Chi Tiết (Google Form)
                     </a>
                   </Button>
                   <Button variant="social" className="w-full bg-sky-500 hover:bg-sky-400 text-white" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/namnhi" target="_blank" rel="noopener noreferrer">
                       Tham Gia Nhóm Telegram
                     </a>
                   </Button>
                   <Button variant="social" className="w-full bg-indigo-600 hover:bg-indigo-500 text-white" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/nam.nhileteam" target="_blank" rel="noopener noreferrer">
                       Theo Dõi Facebook Page
                     </a>
                   </Button>
                   <Button variant="social" className="w-full bg-pink-600 hover:bg-pink-500 text-white" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/namnhi.nlt/" target="_blank" rel="noopener noreferrer">
                       Kết Nối Qua Instagram
                     </a>
                   </Button>
@@ -261,9 +261,9 @@ const Index = () => {
           </p>
           <p className="mb-4">"Chúng tôi Provide - Protect"</p>
           <div className="flex justify-center space-x-6 mb-4">
-            <a href="#" className="hover:text-primary transition-colors">Facebook</a>
-            <a href="#" className="hover:text-primary transition-colors">Instagram</a>
-            <a href="#" className="hover:text-primary transition-colors">Telegram</a>
+            <a href="https://www.facebook.com/nam.nhileteam" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Facebook</a>
+            <a href="https://www.instagram.com/namnhi.nlt/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
+            <a href="https://t.me/namnhi" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Telegram</a>
           </div>
           <p className="text-sm">&copy; 2024 Dự án NAM by NhiLe Team. All Rights Reserved.</p>
         </div>
