@@ -2,16 +2,30 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import heroImage from "@/assets/hero-bg.jpg";
+import { useState } from "react";
 
 const Index = () => {
+  const [showThankYou, setShowThankYou] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted");
+    setShowThankYou(true);
   };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-inter">
+      {showThankYou && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-6">
+          <div className="bg-card-dark border border-border rounded-lg p-8 max-w-md text-center shadow-xl">
+            <h3 className="text-2xl font-bold mb-4 text-primary">Cảm ơn bạn đã kết nối</h3>
+            <p className="text-foreground mb-6">NAM liên hệ để kết nối bạn ngay nhé</p>
+            <Button onClick={() => setShowThankYou(false)} className="w-full" size="lg">
+              Đã hiểu
+            </Button>
+          </div>
+        </div>
+      )}
       {/* HERO SECTION */}
       <header 
         className="min-h-screen flex items-center justify-center text-center p-6 relative"
@@ -94,7 +108,7 @@ const Index = () => {
               {/* N */}
               <div className="bg-secondary p-8 rounded-lg border-t-4 border-primary">
                 <h3 className="text-8xl font-black text-primary brand-letter mb-4">N</h3>
-                <div className="space-y-4">
+                <div className="grid grid-cols-1 gap-4">
                   <p>
                     <strong className="text-xl text-foreground">Nghị lực</strong> – Kiên cường và mạnh mẽ trong việc vượt qua thử thách.
                   </p>
@@ -224,15 +238,14 @@ const Index = () => {
                 <h3 className="text-2xl font-bold mb-6 text-primary">
                   Bước 2: Gia Nhập Ngôi Nhà Chung
                 </h3>
-                <div className="space-y-4">
+                <div className="grid grid-cols-1 gap-4">
                   <Button variant="social" className="w-full bg-blue-600 hover:bg-blue-500 text-white" asChild>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScCdQhfI1pOT9gUQBTN0hxs0kN15TuZ1U4WEzq-L2aQdukDaQ/viewform" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLScCdQhfI1pOT9gUQBTN0hxs0kN15TuZ1U4WEzq-L2aQdukDaQ/viewform"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Điền Form Đăng Ký Chi Tiết (Google Form)
-                    </a>
-                  </Button>
-                  <Button variant="social" className="w-full bg-sky-500 hover:bg-sky-400 text-white" asChild>
-                    <a href="https://t.me/namnhi" target="_blank" rel="noopener noreferrer">
-                      Tham Gia Nhóm Telegram
                     </a>
                   </Button>
                   <Button variant="social" className="w-full bg-indigo-600 hover:bg-indigo-500 text-white" asChild>
