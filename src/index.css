@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './animations.css';
 
 /* NAM Project Design System - Dark masculine theme with golden accents
 All colors MUST be HSL.
@@ -89,6 +90,10 @@ All colors MUST be HSL.
   
   .golden-gradient {
     background: var(--gradient-golden);
+  }
+
+  .text-shadow-golden {
+    text-shadow: var(--text-shadow-golden);
   }
 }
 
