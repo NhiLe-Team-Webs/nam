@@ -77,8 +77,7 @@ export const en = {
             privacy: "We commit to keeping your information confidential.",
             success_title: "Thank you for connecting",
             success_desc: "NAM will contact you as soon as possible.",
-            reset_btn: "Fill information again",
-            join_community_btn: "Join Nam Community"
+            reset_btn: "Fill information again"
         },
         step2: {
             title: "Join the Common Home",
