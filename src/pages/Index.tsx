@@ -392,14 +392,13 @@ const Index = () => {
                     <h3 className="text-2xl font-bold mb-4 text-white">{t('form.step1.success_title')}</h3>
                     <p className="text-muted-foreground mb-8">{t('form.step1.success_desc')}</p>
                     <Button
-                      onClick={() => {
-                        setShowThankYou(false);
-                        setFormData({ name: '', email: '', phone: '' });
-                      }}
-                      variant="outline"
-                      className="w-full"
+                      variant="default"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white border-0"
+                      asChild
                     >
-                      {t('form.step1.reset_btn')}
+                      <a href="https://t.me/namnhi" target="_blank" rel="noopener noreferrer">
+                        {t('form.step1.join_community_btn')}
+                      </a>
                     </Button>
                   </motion.div>
                 )}

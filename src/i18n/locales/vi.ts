@@ -77,7 +77,8 @@ export const vi = {
             privacy: "Chúng tôi cam kết bảo mật thông tin của bạn.",
             success_title: "Cảm ơn bạn đã kết nối",
             success_desc: "NAM sẽ liên hệ với bạn sớm nhất.",
-            reset_btn: "Điền lại thông tin"
+            reset_btn: "Điền lại thông tin",
+            join_community_btn: "Tham gia cộng đồng Nam"
         },
         step2: {
             title: "Gia Nhập Ngôi Nhà Chung",
